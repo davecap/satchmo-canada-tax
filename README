@@ -1,0 +1,14 @@
+Django app to manage Canadian taxes in Satchmo.
+
+Adapted from the version created by Benoit C. Sirois:
+http://bitbucket.org/benoitcsirois/satchmo-canadian-tax
+
+You need to add the CanadianTaxRate model and then add the following data to it in the Django admin:
+
+Tax Class, Tax Zone, Tax Country, Display percentage, Enter your tax number here
+Default, None, Canada, 5.00%, GST
+Default, Quebec, None, 7.50%, QST
+
+Make sure you set the compound order appropriately. Now you can apply tax to products shipped to Quebec (GST and QST) and apply GST only to those shipped to Canada.
+
+Note: If you want to tax shipping costs then you will probably have to modify some code.
