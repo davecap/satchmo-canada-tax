@@ -13,7 +13,6 @@ setup(
         'http://bitbucket.org/benoitcsirois/satchmo-canada-tax',
 
     packages=find_packages(),
-    provides=['satchmo-canada-tax', ],
     include_package_data=True,
     install_requires = [
         'django',
