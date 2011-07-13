@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+
+from setuptools import find_packages, setup
+
+setup(
+    name='satchmo-canada-tax',
+    version='0.0.2',
+    author='David Caplan',
+    url='http://github.com/davecap',
+    description = 
+        'Django app to manage Canadian taxes in Satchmo'
+        'Adapted from the version created by Benoit C. Sirois:'
+        'http://bitbucket.org/benoitcsirois/satchmo-canada-tax',
+
+    packages=find_packages(),
+    provides=['satchmo-canada-tax', ],
+    include_package_data=True,
+    install_requires = [
+        'django',
+        'satchmo<=0.9.2',
+        ]
+)
